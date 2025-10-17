@@ -103,10 +103,4 @@
 
     </section>
 
-    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-        <aside>
-            <p>&copy; {{date('Y')}} {{config('app.name')}}. All rights reserved.</p>
-        </aside>
-    </footer>
-
 @endsection

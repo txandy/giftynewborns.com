@@ -12,7 +12,7 @@
 </head>
 <body class="@yield('body_class')" id="@yield('body_id')">
 
-<header class="navbar bg-base-100 shadow-sm">
+<header class="navbar bg-base-100 shadow-sm sticky top-0">
     <div class="flex-1">
         <a class="btn btn-ghost text-xl">{{config('app.name')}}</a>
     </div>
@@ -35,6 +35,13 @@
 <main class="@yield('main_class')" id="@yield('main_id')">
     @yield('content')
 </main>
+
+<footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+    <aside>
+        <p>&copy; {{date('Y')}} {{config('app.name')}}. All rights reserved.</p>
+    </aside>
+</footer>
+
 
 @stack('footer_js')
 
